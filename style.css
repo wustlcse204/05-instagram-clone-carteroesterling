@@ -1,0 +1,45 @@
+/*HEADER*/
+.header{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    z-index: 1;
+    background-color: white;
+}
+
+#left-header{
+    display: inline-block;
+    float: left;
+    margin: 0;
+}
+
+#center-header{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#right-header{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+#search{
+    border: solid 1px rgb(206, 206, 206);
+    background-color: rgb(241, 241, 241);
+    font-size: 1.25rem;
+    text-align: center;
+    background-image: url("mag-glass.png");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    background-position-x:50px;
+    background-position-y: 2.5px;
+}
+
+#search:focus{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    background-position-x: right;
+}
