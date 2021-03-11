@@ -7,7 +7,7 @@
     height: 60px;
     z-index: 1;
     background-color: white;
-}
+} 
 
 #left-header{
     display: inline-block;
@@ -23,9 +23,8 @@
 #right-header{
     display: inline-block;
     float: right;
-    padding: 20px;
-    margin-right: 100px;
     margin-top: 10px;
+    margin-right: 20px;
 }
 
 #search{
@@ -46,11 +45,40 @@
     background-position-x: right;
 }
 
-div.sidebarsection {
+/*Main Content*/
 
-    margin-top: 5%;
+#main-content{
+    background-color: rgb(207, 207, 207);
+}
+
+div.postssection{
+    width: 70%;
+    margin-top: 70px;
+}
+
+div.sidebarsection {
+    z-index: 5;
+    width: 30%;
     float: right;
     text-align: right;
 }
 
+.image{
+    width:800px;
+    height:600px;
+}
 
+/*Changes the screen for tablet view*/
+
+@media only screen and (max-width: 800px){
+    .postssection{
+        width: 100%;
+    }
+    .sidebarsection{
+        display: none;
+    }
+    .image{
+        width: 90%;
+        height: 70%;
+    }
+}

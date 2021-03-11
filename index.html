@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <title> Assignment 05 - Instagram Clone</title>
     <meta name="view" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <!-- HEADER -->
-    <nav class = "header" id="header">
+    <nav class="header" id="header">
         <span id="left-header">
-            <img src="logo.png" height = 50 width = 50 class="logo" alt="Instagram-Logo">
-            <img src="veritcal-divider.png" height = 50 width = 50 class="divider" alt="Line">
-            <img src="logo-words.png" height = 50 width = 100 class="logo-words" alt="Instagram-Logo">
+            <img src="logo.png" height=50 width=50 class="logo" alt="Instagram-Logo">
+            <img src="veritcal-divider.png" height=50 width=50 class="divider" alt="Line">
+            <img src="logo-words.png" height=50 width=100 class="logo-words" alt="Instagram-Logo">
         </span>
         <span id=center-header>
             <label for="search">
@@ -18,109 +20,140 @@
             </label>
         </span>
         <span id=right-header>
-            <img src="compass.png" height = 40 width = 40 class="compass" alt="compass-icon">
-            <img src="heart.png" height = 40 width = 40 class="heart" alt="heart-icon">
-            <img src="user.png" height = 40 width = 40 class="user" alt="user-icon">
+            <img src="compass.png" height=40 width=40 class="compass" alt="compass-icon">
+            <img src="heart.png" height=40 width=40 class="heart" alt="heart-icon">
+            <img src="user.png" height=40 width=40 class="user" alt="user-icon">
         </span>
     </nav>
 
     <!--MAIN CONTENT-->
+    <div id="main-content">
+        <div class="postssection">
+            <!--Posts section contains two user posts with the appropriate graphics on each post present, as well as the suggestions feature at the very bottom-->
 
-    <div id = "main-content">
-        <div class="postssection"> <!--Posts section contains two user posts with the appropriate graphics on each post present, as well as the suggestions feature at the very bottom-->
-        
             <div id="postone">
-               <div class="useroneheading">
+                <div class="useroneheading">
+                    <p>
+                        <strong>FeedUser1</strong>>
+                    </p>
+                </div>
+                <div class="image" id="postone-image">
+                    <img class=image src="https://www.roguefitness.com/media/catalog/product/cache/1/rogue_header_2015/472321edac810f9b2465a359d8cdc0b5/s/p/spikeball-rookie-h.jpg"
+                    alt="spikeball">
+                </div>
+                <br>
+                <div class="postonegraphics">
+                    <!--Put icons for the post here (like button, comment button, external link button, bookmark button)-->
+
+
+                </div>
+                <p><strong>100 likes</strong></p>
                 <p>
-                <strong>FeedUser1</strong>>
+                    <strong>FeedUser1</strong>
+                    "I love spikeball!"
                 </p>
-               </div>
-               <img src="https://www.roguefitness.com/media/catalog/product/cache/1/rogue_header_2015/472321edac810f9b2465a359d8cdc0b5/s/p/spikeball-rookie-h.jpg" alt="spikeball" width="15%" height="25%" >
-               <br>
-               <div class="postonegraphics"> <!--Put icons for the post here (like button, comment button, external link button, bookmark button)-->
-
-
-               </div>
-               <p><strong>100 likes</strong></p>
-               <p>
-                <strong>FeedUser1</strong>
-                "I love spikeball!"
+                <p>
+                    <font color="grey">2 HOURS AGO</font>
                 </p>
-                <p><font color="grey">2 HOURS AGO</font></p>
                 <hr>
                 <input type="text" class="textcomment" placeholder="Add a comment...">
 
             </div>
-            <div id="postwo">
+            <div id="posttwo">
                 <div class="usertwoheading">
-                <p>
-                <strong>FeedUser2</strong>>
-                </p>
+                    <p>
+                        <strong>FeedUser2</strong>>
+                    </p>
                 </div>
-                <img src="https://www.incimages.com/uploaded_files/image/1920x1080/Spikeball-web_101464.jpg" alt="spikeballplay" width="15%" height="25%" >
+                <div class="image" id="posttwo-image">
+                    <img class =image src="https://www.incimages.com/uploaded_files/image/1920x1080/Spikeball-web_101464.jpg" 
+                    alt="spikeballplay">
+                </div>
                 <br>
-                </div>
-                <div class="posttwographics"> <!--Put icons for the post here (like button, comment button, external link button, bookmark button)-->
- 
- 
-                </div>
-                <p><strong>250 likes</strong></p>
-                <p>
-                 <strong>FeedUser2</strong>
-                 "Just played spikeball w the homies!"
-                 </p>
-                 <p><font color="grey">3 HOURS AGO</font></p>
-                 <hr>
-                 <input type="text" class="textcomment" placeholder="Add a comment...">
             </div>
-            <br>
-            <br>
-            <div id="suggestions"> <!--Display suggestions here-->
-                <div class="suggestionbox">
-                    <p><font color="grey">Suggestions For You</font></p>
+            <div class="posttwographics">
+                <!--Put icons for the post here (like button, comment button, external link button, bookmark button)-->
 
-                </div>
+
+            </div>
+            <p><strong>250 likes</strong></p>
+            <p>
+                <strong>FeedUser2</strong>
+                "Just played spikeball w the homies!"
+            </p>
+            <p>
+                <font color="grey">3 HOURS AGO</font>
+            </p>
+            <hr>
+            <input type="text" class="textcomment" placeholder="Add a comment...">
+        </div>
+        <br>
+        <br>
+        <div id="suggestions">
+            <!--Display suggestions here-->
+            <div class="suggestionbox">
+                <p>
+                    <font color="grey">Suggestions For You</font>
+                </p>
+
             </div>
         </div>
-        <div class="sidebarsection"> <!--Sidebar section contains the main user profile image and name, user stories, and footer links-->
+
+        <div class="sidebarsection">
+            <!--Sidebar section contains the main user profile image and name, user stories, and footer links-->
             <div id="useraccount">
-                <img class="userpic" src="https://images-na.ssl-images-amazon.com/images/I/71QadOBM89L._SL1500_.jpg" alt="mainuser" width="10%" align="middle">
+                <img class="userpic" src="https://images-na.ssl-images-amazon.com/images/I/71QadOBM89L._SL1500_.jpg"
+                    alt="mainuser" width="10%" align="middle">
                 <b>MainUser.username</b>
                 <font color="grey">Main User</font>
             </div>
-            <div id="stories"> <!--Display stories here-->
+            <div id="stories">
+                <!--Display stories here-->
                 <div class="story">
                     <p>
                         <font color="grey">Stories</font>
                         <span>Watch All</span>
                     </p>
-                    <p> <!--Display each user story inside one pair of <p> tags-->
-                        <img class="propic" src="https://i.pinimg.com/originals/b7/74/fd/b774fd854e367926512a11fff0a5905c.jpg" alt="woman1" width="5%" align="middle">
+                    <p>
+                        <!--Display each user story inside one pair of <p> tags-->
+                        <img class="propic"
+                            src="https://i.pinimg.com/originals/b7/74/fd/b774fd854e367926512a11fff0a5905c.jpg"
+                            alt="woman1" width="5%" align="middle">
                         <b>User1</b>
                         <font color="grey">6 HOURS AGO</font>
                     </p>
-                    <p> 
-                        <img class="propic" src="https://i.pinimg.com/736x/b5/c7/64/b5c76413ca8dd6ee959c30fc370b93a0.jpg" alt="woman2" width="5%" align="middle">
+                    <p>
+                        <img class="propic"
+                            src="https://i.pinimg.com/736x/b5/c7/64/b5c76413ca8dd6ee959c30fc370b93a0.jpg" alt="woman2"
+                            width="5%" align="middle">
                         <b>User2</b>
                         <font color="grey">4 HOURS AGO</font>
                     </p>
-                    <p> 
-                        <img class="propic" src="https://i.pinimg.com/originals/9b/5a/8a/9b5a8a73e8aa091a6fc130d9de410085.jpg" alt="woman3" width="5%" align="middle">
+                    <p>
+                        <img class="propic"
+                            src="https://i.pinimg.com/originals/9b/5a/8a/9b5a8a73e8aa091a6fc130d9de410085.jpg"
+                            alt="woman3" width="5%" align="middle">
                         <b>User3</b>
                         <font color="grey">5 HOURS AGO</font>
                     </p>
-                    <p> 
-                        <img class="propic" src="https://i.pinimg.com/564x/e6/cb/f0/e6cbf0a10e4ad7a78027b9850358a541.jpg" alt="woman4" width="5%" align="middle">
+                    <p>
+                        <img class="propic"
+                            src="https://i.pinimg.com/564x/e6/cb/f0/e6cbf0a10e4ad7a78027b9850358a541.jpg" alt="woman4"
+                            width="5%" align="middle">
                         <b>User4</b>
                         <font color="grey">4 HOURS AGO</font>
                     </p>
-                    <p> 
-                        <img class="propic" src="https://media.glamour.com/photos/5696ce4201ed531c6f006fdd/master/pass/beauty-2015-07-hair-chic-neck-derm-main.jpg" alt="woman5" width="5%" align="middle">
+                    <p>
+                        <img class="propic"
+                            src="https://media.glamour.com/photos/5696ce4201ed531c6f006fdd/master/pass/beauty-2015-07-hair-chic-neck-derm-main.jpg"
+                            alt="woman5" width="5%" align="middle">
                         <b>User5</b>
                         <font color="grey">8 HOURS AGO</font>
                     </p>
-                    <p> 
-                        <img class="propic" src="https://i.pinimg.com/736x/46/5e/e0/465ee066ac6522226c026f7eedb990fd.jpg" alt="woman6" width="5%" align="middle">
+                    <p>
+                        <img class="propic"
+                            src="https://i.pinimg.com/736x/46/5e/e0/465ee066ac6522226c026f7eedb990fd.jpg" alt="woman6"
+                            width="5%" align="middle">
                         <b>Natalie P.</b>
                         <font color="grey">8 HOURS AGO</font>
                     </p>
@@ -128,7 +161,8 @@
             </div>
 
 
-            <footer> <!--Display footer links beneath stories section-->
+            <footer>
+                <!--Display footer links beneath stories section-->
                 <div id="ftlinks">
                     <a href="url">About Us.</a>
                     <a href="url">Support.</a>
@@ -143,11 +177,10 @@
                     <a href="url">Language</a>
                 </div>
                 <br>
-                <p><font color="grey">© 2018 INSTAGRAM</font></p>
+                <p>
+                    <font color="grey">© 2018 INSTAGRAM</font>
+                </p>
             </footer>
         </div>
     </div>
-
-
-
 </body>
