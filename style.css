@@ -93,11 +93,18 @@ div.sidebarsection {
 
 #watchall{
     float: right;
+    display: block;
 }
 
 .postuser{
     width:6%;
     border-radius: 50%;
+}
+
+.stories{
+    width: 500px; 
+    height: 300px; 
+    overflow-y: auto; 
 }
 /*Changes the screen for tablet view*/
 
