@@ -48,7 +48,7 @@
 /*Main Content*/
 
 #main-content{
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(238, 238, 238);
 }
 
 div.postssection{
@@ -77,6 +77,12 @@ div.sidebarsection {
     width: 5%;
 }
 
+.timestamp{
+    color: gray;
+}
+.username{
+    color: black;
+}
 /*Changes the screen for tablet view*/
 
 @media only screen and (max-width: 800px){
