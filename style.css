@@ -45,3 +45,10 @@
     text-align: left;
     background-position-x: right;
 }
+
+div.sidebarsection {
+
+    margin-top: 10%;
+    float: right;
+    text-align: right;
+}
