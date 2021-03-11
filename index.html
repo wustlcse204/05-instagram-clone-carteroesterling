@@ -10,7 +10,7 @@
     <!-- HEADER -->
     <nav class="header" id="header">
         <span id="left-header">
-            <img src="logo.png" height=50 width=50 class="logo" alt="Instagram-Logo">
+            <img src="logo.png" height=40 width=40 class="logo" alt="Instagram-Logo">
             <img src="veritcal-divider.png" height=50 width=50 class="divider" alt="Line">
             <img src="logo-words.png" height=50 width=100 class="logo-words" alt="Instagram-Logo">
         </span>
@@ -33,9 +33,9 @@
 
             <div id="postone">
                 <div class="useroneheading">
-                    <p>
-                        <strong>FeedUser1</strong>>
-                    </p>
+                    <img class="postuser" src="https://images-na.ssl-images-amazon.com/images/I/71QadOBM89L._SL1500_.jpg"
+                    alt="mainuser">
+                    <span class = username><strong>MainUser</strong></span>
                 </div>
                 <div class="image" id="postone-image">
                     <img class=image src="https://www.roguefitness.com/media/catalog/product/cache/1/rogue_header_2015/472321edac810f9b2465a359d8cdc0b5/s/p/spikeball-rookie-h.jpg"
@@ -44,8 +44,9 @@
                 <br>
                 <div class="postonegraphics">
                     <!--Put icons for the post here (like button, comment button, external link button, bookmark button)-->
-
-
+                    <img src="heart.png" height=30 width=30 class="like" alt="heart-icon">
+                    <span><img src="comment.png" height=30 width=30 class="comment" alt="comment-icon"></span>
+                    <span><img src="share.png" height=25 width=25 class="share" alt="share-icon"></span>
                 </div>
                 <p><strong>100 likes</strong></p>
                 <p>
@@ -55,15 +56,17 @@
                 <p class=timestamp>
                     2 HOURS AGO
                 </p>
-                <hr>
                 <input type="text" class="textcomment" placeholder="Add a comment...">
+                <hr>
 
             </div>
+
             <div id="posttwo">
                 <div class="usertwoheading">
-                    <p>
-                        <strong>FeedUser2</strong>>
-                    </p>
+                    <img class="postuser"
+                    src="https://i.pinimg.com/originals/9b/5a/8a/9b5a8a73e8aa091a6fc130d9de410085.jpg"
+                    alt="woman3">
+                        <span><strong>FeedUser2</strong></span>
                 </div>
                 <div class="image" id="posttwo-image">
                     <img class =image src="https://www.incimages.com/uploaded_files/image/1920x1080/Spikeball-web_101464.jpg" 
@@ -73,10 +76,13 @@
             </div>
             <div class="posttwographics">
                 <!--Put icons for the post here (like button, comment button, external link button, bookmark button)-->
-
+                <img src="heart.png" height=30 width=30 class="like" alt="heart-icon">
+                <span><img src="comment.png" height=30 width=30 class="comment" alt="comment-icon"></span>
+                <span><img src="share.png" height=25 width=25 class="share" alt="share-icon"></span>
 
             </div>
             <p><strong>250 likes</strong></p>
+            
             <p>
                 <strong>FeedUser2</strong>
                 "Just played spikeball w the homies!"
@@ -84,8 +90,8 @@
             <p class=timestamp>
                 3 HOURS AGO
             </p>
-            <hr>
             <input type="text" class="textcomment" placeholder="Add a comment...">
+            <hr>
         </div>
         <br>
         <br>
@@ -104,16 +110,19 @@
             <div id="useraccount">
                 <img class="userpic" src="https://images-na.ssl-images-amazon.com/images/I/71QadOBM89L._SL1500_.jpg"
                     alt="mainuser">
-                <b>MainUser.username</b>
+                <b>MainUser</b>
                 <span class=timestamp>Main User</span>
             </div>
+            <hr>
             <div id="stories">
                 <!--Display stories here-->
                 <div class="story">
-                    <p class=timestamp>
+                    <p class=timestamp id=storytitle>
                         Stories
-                        <span>Watch All</span>
                     </p>
+                    <span id=watchall>Watch All</span>
+                    <br>
+                    <br>
                     <p class=timestamp>
                         <!--Display each user story inside one pair of <p> tags-->
                         <img class="propic"
@@ -157,6 +166,7 @@
                             <span class=username><b>Natalie P.</b></span>
                         8 HOURS AGO
                     </p>
+                    <hr>
                 </div>
             </div>
 
@@ -177,8 +187,8 @@
                     <a href="url">Language</a>
                 </div>
                 <br>
-                <p>
-                    <font color="grey">© 2018 INSTAGRAM</font>
+                <p class = timestamp>
+                    © 2018 INSTAGRAM
                 </p>
             </footer>
         </div>

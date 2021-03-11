@@ -12,7 +12,7 @@
 #left-header{
     display: inline-block;
     float: left;
-    margin: 0;
+    margin: 10px;
 }
 
 #center-header{
@@ -62,7 +62,7 @@ div.sidebarsection {
     position: fixed;
     right:0;
     top: 10%;
-    text-align: center;
+    text-align: left;
 }
 
 .image{
@@ -72,9 +72,11 @@ div.sidebarsection {
 
 .userpic{
     width:10%;
+    border-radius: 50%;
 }
 .propic{
     width: 5%;
+    border-radius: 50%;
 }
 
 .timestamp{
@@ -83,10 +85,24 @@ div.sidebarsection {
 .username{
     color: black;
 }
+
+#storytitle{
+    float:left;
+    display: block;
+}
+
+#watchall{
+    float: right;
+}
+
+.postuser{
+    width:6%;
+    border-radius: 50%;
+}
 /*Changes the screen for tablet view*/
 
 @media only screen and (max-width: 800px){
-    .postssection{
+    div.postssection{
         width: 100%;
     }
     .sidebarsection{
