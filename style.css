@@ -108,8 +108,10 @@ div.sidebarsection {
 }
 .col-sm{
     width: 20%;
-    border-radius: 30%;
+    border-radius: 50%;
+    align-self: auto;
 }
+
 /*Changes the screen for tablet view*/
 
 @media only screen and (max-width: 800px){
