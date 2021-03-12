@@ -106,6 +106,10 @@ div.sidebarsection {
     height: 300px; 
     overflow-y: auto; 
 }
+.col-sm{
+    width: 20%;
+    border-radius: 30%;
+}
 /*Changes the screen for tablet view*/
 
 @media only screen and (max-width: 800px){
