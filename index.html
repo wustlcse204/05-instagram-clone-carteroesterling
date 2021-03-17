@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <title> Assignment 05 - Instagram Clone</title>
     <meta name="view" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/f9596b6933.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,27 +32,43 @@
         <div class="postssection">
             <div class="post" id="post-one">
                 <form class="container" id="PO">
-                    <h1>Mission Statement</h1>
-                    <p>
-                        The mission of The Walt Disney Company is to entertain, inform and inspire people around the
-                        globe
-                        through the power of unparalleled storytelling, reflecting the iconic brands, creative minds and
-                        innovative technologies that make ours the world’s premier entertainment company.
+                    <img src="post-one-user.jpeg" alt="Man" class="post-user-pic">
+                    <span class="post-user"><strong>someperson</strong></span>
+                    <img src="lake.cms" alt="lake" class="post-pic">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i>
+                    <i class="far fa-share-square"></i>
+                    <i class="far fa-bookmark"></i>
+                    <p class="likes"><strong>30 likes</strong></p>
+                    <p class="post-user"><strong>someperson</strong>
+                        <span>Lake Living!</span>
+                        <span class="hashtag">#LoveLanier</span>
                     </p>
-                    <button type="submit" class="learn-more">Learn More</button>
+                    <hr class="hr1">
+                    <label for="comment">
+                        <input type="text" id="comment" placeholder="Add a comment...">
+                    </label>
                 </form>
             </div>
 
             <div class="post" id="post-two">
                 <form class="container" id="PT">
-                    <h1>Mission Statement</h1>
-                    <p>
-                        The mission of The Walt Disney Company is to entertain, inform and inspire people around the
-                        globe
-                        through the power of unparalleled storytelling, reflecting the iconic brands, creative minds and
-                        innovative technologies that make ours the world’s premier entertainment company.
+                    <img src="post-two-user.jpeg" alt="Man2" class="post-user-pic">
+                    <span class="post-user"><strong>someperson</strong></span>
+                    <img src="hike.jpeg" alt="hike" class="post-pic">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i>
+                    <i class="far fa-share-square"></i>
+                    <i class="far fa-bookmark"></i>
+                    <p class="likes"><strong>30 likes</strong></p>
+                    <p class="post-user"><strong>someperson</strong>
+                        <span>Lake Living!</span>
+                        <span class="hashtag">#LoveLanier</span>
                     </p>
-                    <button type="submit" class="learn-more">Learn More</button>
+                    <hr class="hr1">
+                    <label for="comment">
+                        <input type="text" id="comment" placeholder="Add a comment...">
+                    </label>
                 </form>
             </div>
         </div>
@@ -63,7 +80,7 @@
                 Suggestions for You
                 <span class="see-all"><strong>See All</strong></span>
             </p>
-            
+
 
             <div class="card-container">
                 <div class="card">
@@ -103,90 +120,96 @@
 
 
 
-        <div class="sidebarsection">
-            <!--Sidebar section contains the main user profile image and name, user stories, and footer links-->
-            <div id="useraccount">
-                <img class="userpic" src="https://images-na.ssl-images-amazon.com/images/I/71QadOBM89L._SL1500_.jpg"
-                    alt="mainuser">
-                <b>MainUser</b>
-                <span class=timestamp>Main User</span>
-            </div>
-            <hr>
-            <div class="stories">
-                <!--Display stories here-->
-                <div class="story">
-                    <p class=timestamp id=storytitle>
-                        Stories
-                    </p>
-                    <p id=watchall>Watch All</p>
-
-                    <br>
-                    <br>
-                    <p class=timestamp>
-                        <!--Display each user story inside one pair of <p> tags-->
-                        <img class="propic"
-                            src="https://i.pinimg.com/originals/b7/74/fd/b774fd854e367926512a11fff0a5905c.jpg"
-                            alt="woman1">
-                        <span class=username><b>User1</b></span>
-                        6 HOURS AGO
-                    </p>
-                    <p class=timestamp>
-                        <img class="propic"
-                            src="https://i.pinimg.com/736x/b5/c7/64/b5c76413ca8dd6ee959c30fc370b93a0.jpg" alt="woman2">
-                        <span class=username><b>User2</b></span>
-                        4 HOURS AGO
-                    </p>
-                    <p class=timestamp>
-                        <img class="propic"
-                            src="https://i.pinimg.com/originals/9b/5a/8a/9b5a8a73e8aa091a6fc130d9de410085.jpg"
-                            alt="woman3">
-                        <span class=username><b>User3</b></span>
-                        5 HOURS AGO
-                    </p>
-                    <p class=timestamp>
-                        <img class="propic"
-                            src="https://i.pinimg.com/564x/e6/cb/f0/e6cbf0a10e4ad7a78027b9850358a541.jpg" alt="woman4">
-                        <span class=username><b>User4</b></span>
-                        4 HOURS AGO
-                    </p>
-                    <p class=timestamp>
-                        <img class="propic"
-                            src="https://media.glamour.com/photos/5696ce4201ed531c6f006fdd/master/pass/beauty-2015-07-hair-chic-neck-derm-main.jpg"
-                            alt="woman5">
-                        <span class=username><b>User5</b></span>
-                        8 HOURS AGO
-                    </p>
-                    <p class=timestamp>
-                        <img class="propic"
-                            src="https://i.pinimg.com/736x/46/5e/e0/465ee066ac6522226c026f7eedb990fd.jpg" alt="woman6">
-                        <span class=username><b>Natalie P.</b></span>
-                        8 HOURS AGO
-                    </p>
-                    <hr>
-                </div>
-            </div>
-
-
-            <footer>
-                <!--Display footer links beneath stories section-->
-                <div id="ftlinks">
-                    <p>About Us.
-                        <span>Support. </span>
-                        <span>Press. </span>
-                        <span>API. </span>
-                        <span>Jobs. </span>
-                        <span>Privacy. </span>
-                        <span>Terms. </span>
-                        <span>Directory. </span>
-                        <span>Profiles. </span>
-                        <span>Hashtags. </span>
-                        <span>Language. </span>
-                    </p>
-                    <p class=timestamp>
-                        © 2018 INSTAGRAM
-                    </p>
-                </div>
-                
-            </footer>
+    <div class="sidebarsection">
+        <!--Sidebar section contains the main user profile image and name, user stories, and footer links-->
+        <div id="useraccount">
+            <img class="userpic" src="https://images-na.ssl-images-amazon.com/images/I/71QadOBM89L._SL1500_.jpg"
+                alt="mainuser">
+            <b>MainUser</b>
+            <span class=timestamp>Main User</span>
         </div>
+        <hr>
+        <div class="stories">
+
+
+            <!--Display stories here-->
+            <div class="story">
+                <p class=timestamp id=storytitle>
+                    Stories
+                    <span id=watchall>Watch All</span>
+                </p>
+                
+
+                <br>
+                <br>
+                <div class=story-user>
+                    <!--Display each user story inside one pair of <p> tags-->
+                    <img class="propic" src="story1.jpeg" alt="story1">
+                    <div class="story-info">
+                        <p class=username><b>User1</b></p>
+                        <p class=timestamp> 6 HOURS AGO</p> 
+                    </div>
+                </div>
+                <div class=story-user>
+                    <img class="propic" src="story2.jpeg" alt="story2">
+                    <div class="story-info">
+                        <p class=username><b>User2</b></p>
+                        <p class=timestamp> 6 HOURS AGO</p> 
+                    </div>
+                </div>
+                <div class=story-user>
+                    <img class="propic" src="story3.jpeg" alt="story3">
+                    <div class="story-info">
+                        <p class=username><b>User3</b></p>
+                        <p class=timestamp> 6 HOURS AGO</p> 
+                    </div>
+                </div>
+                <div class=story-user>
+                    <img class="propic" src="story4.jpeg" alt="story4">
+                    <div class="story-info">
+                        <p class=username><b>User4</b></p>
+                        <p class=timestamp> 6 HOURS AGO</p> 
+                    </div>
+                </div>
+                <div class=story-user>
+                    <img class="propic" src="story5.jpeg" alt="story5">
+                    <div class="story-info">
+                        <p class=username><b>User5</b></p>
+                        <p class=timestamp> 6 HOURS AGO</p> 
+                    </div> 
+                </div>
+                <div class=story-user>
+                    <img class="propic" src="story6.png" alt="story6">
+                    <div class="story-info">
+                        <p class=username><b>User6</b></p>
+                        <p class=timestamp> 6 HOURS AGO</p> 
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+
+        <footer>
+            <!--Display footer links beneath stories section-->
+            <div id="ftlinks">
+                <p>About Us.
+                    <span>Support. </span>
+                    <span>Press. </span>
+                    <span>API. </span>
+                    <span>Jobs. </span>
+                    <span>Privacy. </span>
+                    <span>Terms. </span>
+                    <span>Directory. </span>
+                    <span>Profiles. </span>
+                    <span>Hashtags. </span>
+                    <span>Language. </span>
+                </p>
+                <p class=timestamp>
+                    © 2018 INSTAGRAM
+                </p>
+            </div>
+
+        </footer>
+    </div>
 </body>

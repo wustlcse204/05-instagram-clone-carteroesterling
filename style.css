@@ -59,20 +59,18 @@ body{
 
 /*YEYEYEYEYEYEYEYYE*/
 
-.scrolling-bg{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height:75%;
+div.postssection{
+    position: flex;
+    width: 65%;
+    height:calc(1900-2vw)px;
+    margin-top: 70px;
 }
 
 .container {
     position: flex;
     width: 100%;
-    height: 320px;
+    height: 50%;
     background-color: white;
-    padding: 10px;
     margin-left: 20px;
     border:solid rgb(231, 231, 231);
     border-width: 1px;
@@ -81,14 +79,44 @@ body{
     font-family: Roboto;
   }
 
-
-
-
-
-div.postssection{
-    width: 65%;
-    margin-top: 70px;
+.username, .timestamp{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
 }
+
+.story-info{
+    display: flex;
+}
+
+.post-user, .likes, .username{
+    color: rgb(39, 39, 39);
+    margin: 10px;
+}
+
+.post-user-pic{
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.post-pic{
+    width: 100%;
+}
+
+.far {
+    font-size: 30px;
+    color: rgb(85, 85, 85);
+    margin: 5px 8px;
+}
+
+.fa-bookmark{
+    float: right;
+    margin: 0px 10px;
+}
+
 
 div.sidebarsection {
     z-index: 5;
@@ -99,9 +127,25 @@ div.sidebarsection {
     text-align: left;
 }
 
-.image{
-    width:100%;
-    height:100%;
+#comment{
+    border: solid 1px rgb(206, 206, 206);
+    background-color: rgb(241, 241, 241);
+    color: rgb(153, 153, 153);
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 10px;
+}
+
+.hr1{
+    color:rgb(241, 241, 241);
+    opacity: .5;
+    margin: 0px 20px;
+}
+
+.hashtag{
+    color: rgb(31, 64, 109);
 }
 
 .userpic{
@@ -109,15 +153,15 @@ div.sidebarsection {
     border-radius: 50%;
 }
 .propic{
-    width: 5%;
+    position: flex;
+    width: 10%;
     border-radius: 50%;
+    vertical-align: middle;
 }
 
 .timestamp{
     color: gray;
-}
-.username{
-    color: black;
+    margin: 10px;
 }
 
 #storytitle{
@@ -126,8 +170,8 @@ div.sidebarsection {
 }
 
 #watchall{
+    color: rgb(80, 151, 233);
     float: right;
-    display: block;
 }
 
 .postuser{
@@ -140,11 +184,6 @@ div.sidebarsection {
     height: 300px; 
     overflow-y: auto; 
 }
-.col-sm{
-    width: 20%;
-    border-radius: 50%;
-    align-self: auto;
-}
 
 #ftlinks{
     color: grey;
@@ -154,10 +193,12 @@ div.sidebarsection {
 /*Suggestions Section*/
 
 .sug-container{
+    position: flex;
     width: 65%;
     height: 320px;
     background-color: white;
     padding: 10px;
+    margin-top: 20px;
     margin-left: 20px;
     border:solid rgb(231, 231, 231);
     border-width: 1px;
@@ -234,7 +275,7 @@ div.sidebarsection {
     }
     .sug-container{
         width: 90%;
-        height: 1000px;
+        height: 170vh;
     }
     .card-container {
         width: 90%;
