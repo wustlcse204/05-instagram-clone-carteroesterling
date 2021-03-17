@@ -85,8 +85,13 @@ div.postssection{
     font-size: 12px;
 }
 
-.story-info{
-    display: flex;
+
+.story-user, .useraccount{
+    overflow: auto;
+}
+
+.story-info, .user-info{
+    float: left;
 }
 
 .post-user, .likes, .username{
@@ -153,10 +158,15 @@ div.sidebarsection {
     border-radius: 50%;
 }
 .propic{
-    position: flex;
-    width: 10%;
+    float: left;
+    width: 40px;
     border-radius: 50%;
-    vertical-align: middle;
+    border:solid rgb(225, 141, 89);
+
+}
+
+#main-user{
+    margin-left: 20px;
 }
 
 .timestamp{
@@ -165,14 +175,19 @@ div.sidebarsection {
 }
 
 #storytitle{
-    float:left;
-    display: block;
+float: left;
 }
 
-#watchall{
-    color: rgb(80, 151, 233);
-    float: right;
+.story-title{
+    color: rgb(155, 155, 155);
+    margin-left: 10px;
 }
+.watch-all{
+    color: rgb(39, 39, 39);
+    float: right;
+    margin-right: 10px;
+}
+
 
 .postuser{
     width:6%;
@@ -180,8 +195,15 @@ div.sidebarsection {
 }
 
 .stories{
-    width: 500px; 
-    height: 300px; 
+    position: flex;
+    width: 90%;
+    height: 320px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border:solid rgb(231, 231, 231);
+    border-width: 1px;
+    border-radius: 20px;
     overflow-y: auto; 
 }
 
