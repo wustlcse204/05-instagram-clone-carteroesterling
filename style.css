@@ -57,8 +57,37 @@ body{
     background-color: rgb(250, 250, 250);
 }
 
+/*YEYEYEYEYEYEYEYYE*/
+
+.scrolling-bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:75%;
+}
+
+.container {
+    position: flex;
+    width: 100%;
+    height: 320px;
+    background-color: white;
+    padding: 10px;
+    margin-left: 20px;
+    border:solid rgb(231, 231, 231);
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    font-family: Roboto;
+  }
+
+
+
+
+
 div.postssection{
-    width: 70%;
+    width: 65%;
     margin-top: 70px;
 }
 
@@ -193,9 +222,9 @@ div.sidebarsection {
 
 /*Changes the screen for tablet view*/
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 940px){
     div.postssection{
-        width: 100%;
+        width: 90%;
     }
     .sidebarsection{
         display: none;
@@ -206,12 +235,13 @@ div.sidebarsection {
     }
     .sug-container{
         width: 90%;
-        height: 980px;
+        height: 1000px;
     }
     .card-container {
         width: 90%;
         display: block;
         margin-top: 16px;
+        margin-left: 16px
       }
     .logo-words{
         display: none;
