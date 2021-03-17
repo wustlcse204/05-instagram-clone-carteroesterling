@@ -15,6 +15,12 @@
     margin: 10px;
 }
 
+.logo{
+    position: relative;
+    bottom: 10px;
+
+}
+
 #center-header{
     display: inline-block;
     margin-top: 15px;
@@ -47,8 +53,8 @@
 
 /*Main Content*/
 
-#main-content{
-    background-color: rgb(238, 238, 238);
+body{
+    background-color: rgb(250, 250, 250);
 }
 
 div.postssection{
@@ -112,6 +118,79 @@ div.sidebarsection {
     align-self: auto;
 }
 
+#ftlinks{
+    color: grey;
+}
+
+
+/*Suggestions Section*/
+
+.sug-container{
+    width: 65%;
+    height: 320px;
+    background-color: white;
+    padding: 10px;
+    margin-left: 20px;
+    border:solid rgb(231, 231, 231);
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.card-container {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-bottom: 16px;
+}
+    
+.card {
+    background-color: white;
+    border:solid rgb(231, 231, 231);
+    border-width: 1px;
+    text-align: center;
+}
+.see-all{
+    color: rgb(80, 151, 233);
+    float: right;
+}
+.title-text, .see-all{
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.sug-user {
+    padding: 0 16px;
+}
+
+.title {
+    color: grey;
+}
+
+.sug-pic{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+
+}
+  
+.follow {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(80, 151, 233);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.button:hover {
+    background-color: #555;
+}
+
+
+
 /*Changes the screen for tablet view*/
 
 @media only screen and (max-width: 800px){
@@ -125,4 +204,16 @@ div.sidebarsection {
         width: 100%;
         height: 100%;
     }
+    .sug-container{
+        width: 90%;
+        height: 980px;
+    }
+    .card-container {
+        width: 90%;
+        display: block;
+        margin-top: 16px;
+      }
+    .logo-words{
+        display: none;
+    }  
 }
